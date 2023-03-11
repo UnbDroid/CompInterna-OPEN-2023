@@ -24,6 +24,14 @@ MotorDC::MotorDC(int pinoA, int pinoB, int pinoPwm){
     */
 }
 
+
+// MotorDC::~MotorDC(){
+//     ~this->pinoA;
+//     ~this->pinoB;
+//     ~this->pinoPwm;
+// }
+
+
 void MotorDC::andar_para_frente(int *velocidade){
     digitalWrite(this->pinoA, HIGH);
     digitalWrite(this->pinoB, LOW);
